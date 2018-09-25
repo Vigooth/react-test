@@ -15,6 +15,7 @@ class AddJedi extends Component {
 
      if (e.key==="Enter" && e.target.value.length) {
        addJedi(jedi);
+       e.target.value = "";
      }
   };
 

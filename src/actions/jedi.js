@@ -1,12 +1,12 @@
 import axios from 'axios';
-import { ADD_JEDI, DELETE_JEDI, FETCH_JEDI, URL_FETCH_JEDI } from "./types";
+import { JEDI_ADD, JEDI_DELETE, JEDI_FETCH, URL_FETCH_JEDI } from "./types";
 import { getNewJediId } from "../utils/jedi";
 
 const fetchJedi = () => {
   return async (dispatch) => {
     const fetchJedi = await axios.get(URL_FETCH_JEDI);
     dispatch({
-      type: FETCH_JEDI,
+      type: JEDI_FETCH,
       payload: fetchJedi.data,
     });
   }
@@ -20,7 +20,7 @@ const addJedi = name => {
       response = await axios.post(URL_FETCH_JEDI, {id, name});
 
     dispatch({
-      type: ADD_JEDI,
+      type: JEDI_ADD,
       payload: response.data,
     });
   }
@@ -30,7 +30,7 @@ const deleteJedi = id => {
   return  (dispatch) => {
     axios.delete(`${URL_FETCH_JEDI}/${id}`);
     dispatch({
-      type: DELETE_JEDI,
+      type: JEDI_DELETE,
       id
     });
   }
