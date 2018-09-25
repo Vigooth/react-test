@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  background: black;
+}
+.Header-logo {
+  animation: Header-logo-spin infinite 20s linear;
+  height: 50px;
+}
+
+.Header-header {
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.Header-intro {
+  font-size: large;
+}
+button {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes Header-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

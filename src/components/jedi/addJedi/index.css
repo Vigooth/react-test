@@ -1,0 +1,30 @@
+#Home-addJedi-container {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto 0;
+}
+
+#Home-addJedi-container input {
+  border: 0;
+  border-bottom: 2px solid #1976D2;
+  width: 100%;
+  font-size: 30px;
+  line-height: 35px;
+  height: 70px;
+  text-align: center;
+  padding: 10px;
+  background: transparent;
+  color: #BBDEFB;
+}
+
+
+#Home-addJedi-container input:focus {
+  outline: 0;
+  color: #BBDEFB;
+}
+
+#Home-addJedi-container input::placeholder {
+  color: #1976D2;
+}

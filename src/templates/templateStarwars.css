@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: black;
+  color: yellow;
+}
+
+.jedi-item {
+  color: yellow;
+  background: black!important;
+}
+.jedi-list {
+  border-left: 1px solid yellow;
+}
+footer {
+  border-top: 2px solid yellow;
+}
+header {
+  border-bottom: 2px solid yellow;
+}

@@ -1,0 +1,15 @@
+.Home {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1
+}
+
+@media (max-width: 480px) {
+  .Home {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

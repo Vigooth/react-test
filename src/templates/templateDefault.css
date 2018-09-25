@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #2196F3;
+  color: #fff;
+}
+
+.jedi-item {
+  color: #1c5b8d;
+  background: #5db7ff;
+}

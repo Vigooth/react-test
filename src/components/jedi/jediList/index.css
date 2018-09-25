@@ -1,0 +1,38 @@
+.jedi-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 10px;
+  outline: solid 2px black;
+  transition: outline 0.2s linear;
+  font-weight: 600;
+}
+.jedi-list {
+  flex-direction: row;
+  overflow-y: auto;
+  height: 700px;
+  flex-basis: 50%;
+}
+.jedi-id {
+  opacity: 0;
+  margin-right: 20px;
+
+}
+.jedi-item:hover {
+  box-sizing: border-box;
+  cursor: pointer;
+  outline-width: 4px;
+  color: #ec971f;
+  transform: scale(1, 1.2);
+  transition: .2s ease;
+}
+.btn-delete {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+}
+.jedi-item:hover .jedi-id,
+.jedi-item:hover .btn-delete {
+  opacity: 1;
+}

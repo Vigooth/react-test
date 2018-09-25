@@ -1,0 +1,14 @@
+const ROOT_URL = 'http://localhost:3001';
+const URL_FETCH_JEDI = `${ROOT_URL}/jedi`;
+const FETCH_JEDI = `FETCH_JEDI`;
+const ADD_JEDI = `ADD_JEDI`;
+const DELETE_JEDI = `DELETE_JEDI`;
+const TEMPLATE_CHANGE = `TEMPLATE_CHANGE`;
+
+export {
+  FETCH_JEDI,
+  URL_FETCH_JEDI,
+  ADD_JEDI,
+  DELETE_JEDI,
+  TEMPLATE_CHANGE
+}
