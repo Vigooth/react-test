@@ -36,4 +36,5 @@ const deleteJedi = id => {
   }
 };
 
-export { addJedi, fetchJedi, deleteJedi }
+
+export { addJedi, fetchJedi, deleteJedi    }

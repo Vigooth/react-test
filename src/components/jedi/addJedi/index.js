@@ -1,3 +1,1 @@
-import addJedi from './AddJedi';
-
-export default addJedi;
+export { default } from './AddJedi';

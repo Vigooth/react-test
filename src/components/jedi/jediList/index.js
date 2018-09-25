@@ -1,3 +1,1 @@
-import JediList from './JediList';
-
-export default JediList;
+export { default } from './JediList';
