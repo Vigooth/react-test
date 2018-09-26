@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { JEDI_ADD, JEDI_DELETE, JEDI_FETCH, URL_FETCH_JEDI } from "./types";
+import { JEDI_ADD, JEDI_UPDATE, JEDI_DELETE, JEDI_FETCH, URL_FETCH_JEDI } from "./types";
 import { getNewJediId } from "../utils/jedi";
 
 const fetchJedi = () => {
@@ -35,6 +35,20 @@ const deleteJedi = id => {
     });
   }
 };
+const updateJedi = (jedi, name) => {
+  return  async (dispatch) => {
+    const response = await axios.put(`${URL_FETCH_JEDI}/${jedi.id}`, {...jedi, name});
+    dispatch({
+      type: JEDI_UPDATE,
+      payload: response.data
+    });
+  }
+};
 
 
-export { addJedi, fetchJedi, deleteJedi    }
+export {
+  addJedi,
+  updateJedi,
+  fetchJedi,
+  deleteJedi
+}

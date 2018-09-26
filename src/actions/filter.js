@@ -13,7 +13,6 @@ const filterJedi = filter => {
 const filters = ({filter, jedi}) => {
   const filterNames = Object.keys(filter);
   let jediFiltered = [];
-
   filterNames.forEach(filterName => {
     switch (filterName) {
       case 'search': jediFiltered = filterByName(filter, jedi); break;

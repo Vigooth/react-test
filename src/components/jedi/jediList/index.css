@@ -27,6 +27,15 @@
   transform: scale(1, 1.2);
   transition: .2s ease;
 }
+.jedi-item input {
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  font-size: unset;
+}
+.jedi-item input:focus, .jedi-item textarea:focus {
+  outline: none;
+}
 .btn-delete {
   display: flex;
   justify-content: center;

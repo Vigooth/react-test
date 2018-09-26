@@ -2,6 +2,7 @@ const ROOT_URL = 'http://localhost:3001';
 const URL_FETCH_JEDI = `${ROOT_URL}/jedi`;
 const JEDI_FETCH = `JEDI_FETCH`;
 const JEDI_ADD = `JEDI_ADD`;
+const JEDI_UPDATE = `JEDI_UPDATE`;
 const JEDI_DELETE = `JEDI_DELETE`;
 const JEDI_FILTER = `JEDI_FILTER`;
 const TEMPLATE_CHANGE = `TEMPLATE_CHANGE`;
@@ -12,5 +13,6 @@ export {
   JEDI_ADD,
   JEDI_DELETE,
   JEDI_FILTER,
+  JEDI_UPDATE,
   TEMPLATE_CHANGE
 }

@@ -13,6 +13,10 @@ body {
 .jedi-list {
   border-left: 1px solid yellow;
 }
+.jedi-item input {
+  color: #fff511;
+  background: black;
+}
 footer {
   border-top: 2px solid yellow;
 }

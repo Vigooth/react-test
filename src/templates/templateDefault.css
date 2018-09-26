@@ -10,3 +10,8 @@ body {
   color: #1c5b8d;
   background: #5db7ff;
 }
+.jedi-item input {
+  background: #5db7ff;
+  color: blue;
+
+}

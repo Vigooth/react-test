@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { fetchJedi, deleteJedi } from '../../../actions/jedi';
+import { fetchJedi, deleteJedi, updateJedi } from '../../../actions/jedi';
 import { filters } from '../../../actions/filter';
-import { JediItem } from "./JediItem";
+import JediItem  from "./JediItem";
 import './index.css'
 
 class JediList extends Component {
@@ -12,7 +12,7 @@ class JediList extends Component {
   }
 
   render() {
-    const { jedi, deleteJedi } = this.props;
+    const { jedi, deleteJedi, updateJedi } = this.props;
     return (
       <div className="jedi-list">
         {jedi.map((jedi, index) => (
@@ -20,6 +20,7 @@ class JediList extends Component {
             key={index}
             jedi={jedi}
             deleteJedi={deleteJedi}
+            updateJedi={updateJedi}
           />
         ))}
       </div>
@@ -38,5 +39,5 @@ JediList.propTypes = {
   filter: PropTypes.object,
 };
 export default connect(
-  mapStateToProps, { fetchJedi, deleteJedi }
+  mapStateToProps, { fetchJedi, deleteJedi, updateJedi }
 )(JediList);
